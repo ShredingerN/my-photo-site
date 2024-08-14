@@ -47,12 +47,6 @@ p {
     align-items: center;
 }
 @media (max-width: 768px) {
-    .card {
-        width: calc(100% - 20px);
-        /* Вычисляемая ширина на мобильных устройствах */
-        clear: both;
-        /* Очистка float на мобильных устройствах */
-    }
     .grid-container {
         grid-template-columns: 1fr; /* Установка одного столбца при маленьком экране */
     }         

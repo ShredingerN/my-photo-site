@@ -1,0 +1,68 @@
+html {
+    font-size: 16px;
+}
+body {
+    font-family: "Caveat";
+    margin: 5px 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #eeead6;
+    color: #333;
+}
+h1 {
+    color: #c1582e;
+    margin-bottom: 20px;
+    text-shadow:5px 4px 7px #777;
+    font-size: 2.4rem;
+}
+p.subtitle {
+    font-size: 1.5rem;
+    color: #555;
+}
+p {
+    font-size: 2rem;
+    margin: 5px;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #c7b168;
+    box-sizing: border-box;
+    background: linear-gradient(-60deg, #f8f8e8, #d8c590);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    align-items: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.grid-wrapper {
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px);
+        /* Вычисляемая ширина на мобильных устройствах */
+        clear: both;
+        /* Очистка float на мобильных устройствах */
+    }
+    .grid-container {
+        grid-template-columns: 1fr; /* Установка одного столбца при маленьком экране */
+    }         
+}
+.card img {
+    object-fit: cover;
+    box-shadow: 5px 5px 5px #777;
+}
+.project-description {
+    color: #777;
+    font-size: 1rem;
+    margin-top:1 ;
+}

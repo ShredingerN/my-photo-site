@@ -5,78 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
     <title>Мое портфолио</title>
-    <style>
-        body {
-            font-family: "Caveat";
-            margin: 5px 30px;
-            padding: 20px;
-            box-sizing: border-box;
-            text-align: center;
-            background-color: #eeead6;
-            color: #333;
-        }
-        h1 {
-            color: #c1582e;
-            margin-bottom: 20px;
-            text-shadow:5px 4px 7px #777;
-            font-size: 40px;
-        }
-        p.subtitle {
-            font-size: 1.5em;
-            color: #555;
-        }
-        p {
-            font-size: 2em;
-            margin: 5px;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        .card {
-            margin: 10px;
-            padding: 15px;
-            border: 1px solid #c7b168;
-            box-sizing: border-box;
-            background: linear-gradient(-60deg, #f8f8e8, #d8c590);
-            border-radius: 8px;
-            transition: transform 0.3s ease-in-out;
-            align-items: center;
-        }
-        .grid-container {
-            display: grid;
-            /*2 колокни с равной шириной*/
-            grid-template-columns: repeat(3, 1fr);
-            /*промежуток между ячейками*/
-            gap: 20px;
-        }
-        .grid-wrapper {
-            justify-content: center; /* Центрирование по горизонтали */
-            align-items: center; /* Центрирование по вертикали */
-        }
-        @media (max-width: 768px) {
-            .card {
-                width: calc(100% - 20px);
-                /* Вычисляемая ширина на мобильных устройствах */
-                clear: both;
-                /* Очистка float на мобильных устройствах */
-            }
-            .grid-container {
-                grid-template-columns: 1fr; /* Установка одного столбца при маленьком экране */
-            }         
-        }
-        .card img {
-            object-fit: cover;
-            box-shadow: 5px 5px 5px #777;
-        }
-        .project-description {
-            color: #777;
-            font-size: 1em;
-            margin-top:1 ;
-        }
-    </style>
+</head>
 </head>
 <body>
     <h1>Моя фотосессия с Орликом</h1>
